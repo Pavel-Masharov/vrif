@@ -3,9 +3,13 @@ using UnityEngine;
 
 namespace VR.CustomScene
 {
+    /// <summary>
+    /// This component is designed to change the material when taking and releasing an object
+    /// </summary>
     public class GrabbableChangeColor : GrabbableEvents
     {
-        [SerializeField] private Material _materialOnGrab;
+        //assigned material
+        [Header ("assigned material")][SerializeField] private Material _materialOnGrab;
         private Material _defoltMaterial;
         private MeshRenderer _meshRenderer;
 
